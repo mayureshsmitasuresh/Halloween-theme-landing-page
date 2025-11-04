@@ -1,6 +1,9 @@
-##Halloween Landing Page Submission for Frontend Challenge
+### Halloween Landing Page Submission for Frontend Challenge
 
 *This is a submission for [Frontend Challenge - Halloween Edition, Perfect Landing](https://dev.to/challenges/frontend-2025-10-15)*
+[![HTML]]
+[![CSS]]
+[![JS]]
 
 ## What I Built
 
