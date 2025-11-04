@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween Party Invitation 🎃</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loader">
+      <img src="assets/loader.jpg" alt="Loading..." />
+    </div>
+
+    <div class="parallax-bg"></div>
+
+    <div class="stars"></div>
+    <div class="fog"></div>
+
+    <div class="container">
+      <!-- Floating ghosts -->
+      <div class="ghost ghost-1">👻</div>
+      <div class="ghost ghost-2">🩸</div>
+      <div class="ghost ghost-3">🔮</div>
+
+      <!-- Bats -->
+      <div class="bat bat-1">🦇</div>
+      <div class="bat bat-2">🧛🏻‍♀️</div>
+      <div class="bat bat-3">๋࣭ ⭑🕸🦇🕸๋࣭ ⭑</div>
+
+      <!-- Main invitation card -->
+      <div class="invitation-card">
+        <div class="card-header">
+          <div class="pumpkin-decoration">
+            <span class="pumpkin">🎃</span>
+            <span class="pumpkin">🦇 🥀 🕯 🪦 🩸</span>
+            <span class="pumpkin">🎃</span>
+          </div>
+          <h1 class="title">
+            <span class="spooky-text">Hey Boo Boo Bunnies!</span>
+          </h1>
+          <div class="skull-decoration">💀</div>
+        </div>
+
+        <div class="card-body">
+          <div class="event-details">
+            <div class="detail-item" data-aos="fade-up" data-delay="100">
+              <span class="icon">🕷️</span>
+              <div class="detail-content">
+                <h3>Halloween Spooktacular</h3>
+                <p>A night of frightful delights</p>
+              </div>
+            </div>
+
+            <div class="detail-item" data-aos="fade-up" data-delay="200">
+              <span class="icon">📅</span>
+              <div class="detail-content">
+                <h3>Date</h3>
+                <p>October 31st, 2025</p>
+              </div>
+            </div>
+
+            <div class="detail-item" data-aos="fade-up" data-delay="300">
+              <span class="icon">🕐</span>
+              <div class="detail-content">
+                <h3>Time</h3>
+                <p>8:00 PM - Until the witching hour</p>
+              </div>
+            </div>
+
+            <div class="detail-item" data-aos="fade-up" data-delay="400">
+              <span class="icon">🏚️</span>
+              <div class="detail-content">
+                <h3>Location</h3>
+                <p>The Haunted Manor, 666 Spooky Lane</p>
+              </div>
+            </div>
+
+            <div class="detail-item" data-aos="fade-up" data-delay="500">
+              <span class="icon">🧛</span>
+              <div class="detail-content">
+                <h3>Dress Code</h3>
+                <p>Come in your most frightening costume!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="features">
+            <div class="feature" data-aos="zoom-in" data-delay="600">
+              <span class="feature-icon">🍬</span>
+              <p>Trick or Treat Bar</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-delay="700">
+              <span class="feature-icon">🎵</span>
+              <p>Spooky Music</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-delay="800">
+              <span class="feature-icon">🏆</span>
+              <p>Costume Contest</p>
+            </div>
+            <div class="feature" data-aos="zoom-in" data-delay="900">
+              <span class="feature-icon">🎃</span>
+              <p>Pumpkin Carving</p>
+            </div>
+          </div>
+
+          <button class="rsvp-button" id="rsvpButton">
+            RSVP Now
+            <span class="button-icon">👻</span>
+          </button>
+        </div>
+
+        <div class="card-footer">
+          <p class="footer-text">Can't wait to see you there!</p>
+          <div class="spider-web">🕸️</div>
+        </div>
+      </div>
+
+      <!-- Floating particles -->
+      <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- RSVP Modal -->
+    <div class="modal" id="rsvpModal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>🎃 Confirm Your Attendance 🎃</h2>
+        <form id="rsvpForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+              <option value="1">Just me</option>
+              <option value="2">2 people</option>
+              <option value="3">3 people</option>
+              <option value="4">4 people</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="costume">Costume Idea</label>
+            <input
+              type="text"
+              id="costume"
+              name="costume"
+              placeholder="What will you dress as?"
+            />
+          </div>
+
+          <button type="submit" class="submit-button">
+            Confirm Attendance 🦇
+          </button>
+        </form>
+        <div class="success-message" id="successMessage">
+          <h3>🎉 You're all set! 🎉</h3>
+          <p>We'll see you at the party!</p>
+        </div>
+      </div>
+    </div>
+
+    <section id="halloween-history" class="timeline-section">
+      <h2>🕸️ The Haunted History of Halloween 🕯️</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-year="2000 BC">
+          <span>🧙‍♂️ Celtic Festival of Samhain</span>
+          <p>
+            Ancient Celts celebrated the end of harvest and believed spirits
+            roamed the earth.
+          </p>
+        </div>
+        <div class="timeline-item" data-year="43 AD">
+          <span>🏛️ Romans Join the Spook</span>
+          <p>Romans combined Samhain with Feralia, a day honoring the dead.</p>
+        </div>
+        <div class="timeline-item" data-year="1000 AD">
+          <span>⛪ All Hallows’ Eve</span>
+          <p>
+            The Church made November 1st All Saints Day — the night before
+            became Halloween!
+          </p>
+        </div>
+        <div class="timeline-item" data-year="1900s">
+          <span>🎭 Trick or Treat Tradition</span>
+          <p>
+            Children began dressing up and collecting treats — modern Halloween
+            was born!
+          </p>
+        </div>
+        <div class="timeline-item" data-year="Today">
+          <span>🧛‍♀️🎃🕸️ Spooky Celebrations Everywhere!</span>
+          <p>
+            From haunted houses to movie marathons — the world still loves a
+            good scare.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Made with 🎃 by
+        <a
+          href="https://www.linkedin.com/in/mayureshsmitasuresh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mayuresh
+        </a>
+      </p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
